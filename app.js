@@ -17,7 +17,7 @@ import flatten2 from './recursion/flatten2.js'
 //console.log(fact);
 
 
-let arr1 = [12, 3, [1, 6, 5], 23, [12, 11, [7, 66], 4], 13, 88, [6, [5, [4]]]];
-//let flattened = flatten(arr1);
-let flattened = flatten2(arr1);
-console.log(flattened);
+// let arr1 = [12, 3, [1, 6, 5], 23, [12, 11, [7, 66], 4], 13, 88, [6, [5, [4]]]];
+// //let flattened = flatten(arr1);
+// let flattened = flatten2(arr1);  //один закомент, второй раскомент.
+// console.log(flattened);
