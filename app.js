@@ -3,6 +3,7 @@ import sumToOne from './recursion/sumToOne.js'
 import factorial from './recursion/factorial.js'
 import flatten from './recursion/flatten.js'
 import flatten2 from './recursion/flatten2.js'
+import iterFib from './recursion/fibonacciIteratively.js'
 
 //раскомментировать необходимый пример
 
@@ -21,3 +22,6 @@ import flatten2 from './recursion/flatten2.js'
 // //let flattened = flatten(arr1);
 // let flattened = flatten2(arr1);  //один закомент, второй раскомент.
 // console.log(flattened);
+
+
+console.log(iterFib(5));
