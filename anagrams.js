@@ -1,4 +1,4 @@
-//сортировать надо
+//сортировать
 //"адрес" и "среда" они оба сортируются в "а д е р с" и тд.
 
 function getAnagrams(input) {
@@ -6,7 +6,7 @@ function getAnagrams(input) {
   let result = [];
   input.split(" ").forEach(el => {
     let sortedEl = el.split('').sort().join('');
-    (obj[sortedEl]) ? obj[sortedEl].push(el) : obj[sortedEl] = [el];
+    obj[sortedEl] ? obj[sortedEl].push(el) : obj[sortedEl] = [el];
     });
   for(let key of Object.keys(obj)){
     if(obj[key].length <= 1){
