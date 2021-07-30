@@ -6,16 +6,11 @@ function getAnagrams(input) {
   let result = [];
   input.split(" ").forEach(el => {
     let sortedEl = el.split('').sort().join('');
-    if(obj[sortedEl]){
-      obj[sortedEl].push(el);
-    }else{
-      obj[sortedEl] = [el];
-    }
-  });
+    (obj[sortedEl]) ? obj[sortedEl].push(el) : obj[sortedEl] = [el];
+    });
   for(let key of Object.keys(obj)){
     if(obj[key].length <= 1){
       delete obj[key];
-
     }
   }
 
