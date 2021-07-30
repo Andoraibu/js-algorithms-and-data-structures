@@ -32,4 +32,4 @@ import fib from './recursion/fibRecursive.js';
 // const str = 'адрес карп кума мир мука парк рим среда стук рост трос сорт';
 // console.log(getAnagrams(str));
 
-console.log(fib(7));
+//console.log(fib(7));
