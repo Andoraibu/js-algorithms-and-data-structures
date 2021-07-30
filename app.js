@@ -3,7 +3,8 @@ import sumToOne from './recursion/sumToOne.js'
 import factorial from './recursion/factorial.js'
 import flatten from './recursion/flatten.js'
 import flatten2 from './recursion/flatten2.js'
-import iterFib from './recursion/fibonacciIteratively.js'
+import iterFib from './recursion/fibonacciIteratively.js';
+import getAnagrams from './anagrams.js';
 
 //раскомментировать необходимый пример
 
@@ -24,4 +25,8 @@ import iterFib from './recursion/fibonacciIteratively.js'
 // console.log(flattened);
 
 
-console.log(iterFib(5));
+//console.log(iterFib(5));
+
+const str = 'адрес карп кума мир мука парк рим среда стук рост трос сорт';
+console.log(getAnagrams(str));
+
