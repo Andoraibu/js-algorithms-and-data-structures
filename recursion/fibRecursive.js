@@ -1,9 +1,9 @@
 function fib(n){
     //base case
-    if(n < 1){
+    if(n < 2){
         return n;
     }
-    
-
     return fib(n-2) + fib(n-1);
 }
+
+export default fib;

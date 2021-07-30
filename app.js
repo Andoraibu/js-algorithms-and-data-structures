@@ -5,6 +5,7 @@ import flatten from './recursion/flatten.js'
 import flatten2 from './recursion/flatten2.js'
 import iterFib from './recursion/fibonacciIteratively.js';
 import getAnagrams from './anagrams.js';
+import fib from './recursion/fibRecursive.js';
 
 //раскомментировать необходимый пример
 
@@ -27,6 +28,8 @@ import getAnagrams from './anagrams.js';
 
 //console.log(iterFib(5));
 
-const str = 'адрес карп кума мир мука парк рим среда стук рост трос сорт';
-console.log(getAnagrams(str));
 
+// const str = 'адрес карп кума мир мука парк рим среда стук рост трос сорт';
+// console.log(getAnagrams(str));
+
+console.log(fib(7));
