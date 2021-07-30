@@ -3,7 +3,6 @@
 
 function getAnagrams(input) {
   let obj = {};
-  let result = [];
   input.split(" ").forEach(el => {
     let sortedEl = el.split('').sort().join('');
     obj[sortedEl] ? obj[sortedEl].push(el) : obj[sortedEl] = [el];
