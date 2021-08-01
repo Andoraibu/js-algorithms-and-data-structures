@@ -2,12 +2,11 @@
 //пример: 'elon musk' -> E.M.
 
 function getInitials(str){
-    let result = '';
-    str.split(' ').map(el => {
-        return result += `${el[0].toUpperCase()}.`;
-    });
+    
+    return str.split(' ').map(el => {
+        return `${el[0].toUpperCase()}.`;
+    }).join('');
 
-    return result;
 }
 
 console.log(getInitials('elon musk junior'));
