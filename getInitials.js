@@ -3,9 +3,7 @@
 
 function getInitials(str){
     
-    return str.split(' ').map(el => {
-        return `${el[0].toUpperCase()}.`;
-    }).join('');
+    return str.split(' ').map(el => `${el[0].toUpperCase()}.` ).join('');
 
 }
 
