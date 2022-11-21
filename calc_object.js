@@ -18,6 +18,24 @@ let calculator = {
 // calculator.read(10, 12);
 // console.log(calculator.sum());
 
+function AnotherCalc(){
+    this.a = undefined;
+    this.b = undefined;
+
+    this.read = function (x, y){
+        this.a = x;
+        this.b = y;
+    }
+
+    this.sum = function (){
+        return this.a + this.b;
+    }
+}
+
+let c = new AnotherCalc();
+c.read(1,2);
+console.log(c.sum());
+
 /* chaining */
 let ladder = {
     step: 0,
