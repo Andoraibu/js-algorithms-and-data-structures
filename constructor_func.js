@@ -20,4 +20,19 @@ function User(name) {
 
   // return this;  (неявно)
 }
+
+------------
+Используя специальное свойство new.target внутри функции, мы можем проверить, вызвана ли функция при помощи оператора new или без него.
+
+В случае, если функция вызвана при помощи new, то в new.target будет сама функция, в противном случае undefined.
+
+function User() {
+  alert(new.target);
+}
+
+// без "new":
+User(); // undefined
+
+// с "new":
+new User(); // function User { ... }
  */
