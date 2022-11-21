@@ -5,8 +5,8 @@ function User(name) {
 
 let user = new User("Вася");
 
-alert(user.name); // Вася
-alert(user.isAdmin); // false
+//alert(user.name); // Вася
+//alert(user.isAdmin); // false
 
 /*
 Другими словами, вызов new User(...) делает примерно вот что:
@@ -36,3 +36,11 @@ User(); // undefined
 // с "new":
 new User(); // function User { ... }
  */
+
+// return в функции конструкторе возвращает THIS:
+function SmallUser() {
+    this.name = "Bob";
+    return;
+}
+
+console.log(new SmallUser().name)
